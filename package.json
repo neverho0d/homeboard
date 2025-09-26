@@ -1,0 +1,21 @@
+{
+  "name": "homeboard",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "bin": {
+    "homeboard-generate": "./bin/homeboard-generate"
+  },
+  "scripts": {
+    "generate": "node ./src/homeboard.mjs",
+    "dev": "node ./src/homeboard.mjs --dev",
+    "build:css": "tailwindcss  -i ./src/tailwind.css -o ./src/theme.css --minify",
+    "check": "node -e \"console.log('OK')\""
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13"
+  }
+}

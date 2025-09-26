@@ -1,0 +1,11 @@
+[Unit]
+Description=Generate HomeBoard
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/homeboard-generate
+Environment=XDG_CONFIG_HOME=%h/.config
+Environment=XDG_DATA_HOME=%h/.local/share
+Environment=XDG_CACHE_HOME=%h/.cache
+WorkingDirectory=%h/.local/share/homeboard
+

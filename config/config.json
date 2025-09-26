@@ -1,0 +1,14 @@
+{
+  "siteTitle": "HomeBoard",
+  "refreshHint": "Refreshed every 10 min",
+  "theme": "auto",
+  "grid": { "columns": 4, "gap": 12 },
+  "plugins": {
+    "bookmarks": { "title": "Quick Links", "width": 2 },
+    "loadavg":   { "title": "System Load", "width": 1 }
+  },
+  "security": {
+    "allowTrustedHtml": false
+  }
+}
+
